@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,600;1,700&family=Noto+Serif+Toto&family=Vina+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,600;1,700&family=Noto+Serif+Toto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vina Sans', cursive;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* medida para usar a tela cheia*/
+    height: 100vh; /* medida para usar a tela cheia*/
+    background-image:linear-gradient(rgb(5, 7, 100), rgb(74, 206, 230));
+
+}
+
+.mapBox{
+    position: relative;
+    width: 600px;
+    height:500px;
+    background: #fff;
+    margin-right: 50px;
+}
+
+.titulo{
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    font-size: 25px;
+    margin-left: -15%;
+    margin-top: -50%;
+}
+
+.titulo h1{
+    margin-left: -30%;
+}
+

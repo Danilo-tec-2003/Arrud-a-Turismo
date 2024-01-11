@@ -1,0 +1,241 @@
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,600;1,700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,600;1,700&family=Noto+Serif+Toto&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,600;1,700&family=Noto+Serif+Toto&display=swap');
+
+
+
+  *{
+   margin: 0;
+   padding: 0;
+   font-family:"Staatliches", "sans-serif";
+   box-sizing: border-box;
+   font-family: 'Bebas Neue', sans-serif;
+   
+  }
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 5%;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    /*EDIT DO CABEÇALHO*/
+  }
+
+  .logo{
+    font-size: 30px;
+    color:#ffffff;
+    text-decoration: none;
+    font-weight:900;
+    text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000;
+      /*EDIT DO NOME "ARRUDEIO"*/
+      font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .social-media{
+    margin: 0 auto 0 50px; 
+          /*AQUI ESTOU AJUSTANDO O POSICIONAMENTO DOS QUADRADINHOS DAS REDES*/
+  }
+
+  .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;     
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: .5s; /*TEMPO DA ANIMAÇÃO DO HOVER*/
+
+                    /*AQUI ESTOU EDITANDO OS QUADRADINHOS DAS REDES SOCIAIS*/
+  }
+
+  .social-media a:hover{
+    background: #ffffff;
+        /*ANIMAÇÃO DE QUANDO PASSAR O MOUSE POR CIMA DOS QUADRADINHOS DAS REDES SOCIAIS*/
+  }
+  .social-media a i {
+    font-size:25px;
+    color:#fff;
+    transition: .5s; /*TEMPO DE ANIMAÇÃO DA TROCA DE COR DOS ICONES DENTRO DOS QUADRADINHOS*/
+           /*EDIT DOS ICONES DENTRO DOS QUADRADINHOS*/
+  }
+
+  .social-media a:hover i{
+    color:#000;
+    /*COR QUE OS ICONES IRÃO FICAR QUANDO O MOUSE FOR PASSADO EM CIMA*/
+  }
+
+  .navbar a{
+    font-size: 26px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 30px;
+ text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000;
+ position: relative; /*SERVE PARA DEIXAR O ELEMENTO RELATIVO E ASSIM CONSEGUIR POSICIONAR OS ELEMENTOS FILHOS ONDE EU QUISER*/
+ font-family: 'Bebas Neue', sans-serif; 
+  }
+  
+.navbar a::after{
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: #242222;
+  position: absolute;
+  bottom: 0;
+  left: 0;  
+  transition: 0.5s ease-in-out;
+                   /*EFEITO DE BORDA ANIMADA NA BARRA DE NAVEGAÇÃO*/
+}
+.navbar a:hover::after{
+    width: 100%; 
+                   /*EFEITO DE BORDA ANIMADA NA BARRA DE NAVEGAÇÃO*/
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+                  /*EDIT DA POSIÇÃO DO BANNER*/
+
+}
+
+
+  
+.imagemDefundo img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+                /*EDIT DO BANNER E DO BACKGROUND*/
+}
+
+.imagemDefundo .info-esquerda{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+   
+              /*EDIT ESTOU DIMENSIONANDO A IMAGEM PARA FICAR COMPACTA AO EFEITO BORRADO*/
+}
+
+.info-esquerda .efeito-borrado{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    -webkit-mask:linear-gradient(#000 0 0),
+    linear-gradient(#000 0 0);
+    -webkit-mask-clip:text,padding-box;
+    -webkit-mask-composite:xor;
+    
+   
+    /*AQUI ESTOU CRIANDO O EFEITO BORRADO, JUNTO COM O BACKDROP*/
+}
+
+
+.efeito-borrado h1{
+    font-size: 300px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+              /*EDIT DO NOME "REC" */
+}
+.efeito-borrado h1{
+    letter-spacing: 30px;
+}
+.info-esquerda .descricao {
+    position:absolute;
+    bottom: 2%;
+    left: 10%;
+    color: #fff;
+                         /*EDIT DA INFORMAÇAO NA ESQUERDA NO CANTO INFERIOR*/
+}
+
+.descricao  h3{
+    font-size: 25px;
+    font-family: "ormorant Garamond";
+    
+    
+                        /*EDIT NO TITULO DA INFORMAÇÃO NA ESQUERDA*/
+}
+.descricao  p{
+    font-size: 18px;
+    margin: 10px 0 15px; 
+    font-family: "ormorant Garamond";
+    text-shadow: 5px 5px 5px black;
+
+                         /*EDIT DA DESCRIÇÃO DA INFORMÇÃO DA ESQUERDA*/
+}
+
+.descricao .btn{
+    display: inline-block;
+    padding: 13px 28px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius:  6px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16PX;
+    color: #444;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+                         /*EDIT DO BOTAO "SAIBA MAIS*/
+}
+
+.descricao  .btn:hover {
+background: transparent;
+color: #fff;
+                    /*EDIT ANIMAÇÃO DO BOTÃO "SAIBA MAIS*/
+}
+
+.imagemDefundo .info-direita{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      /*POSICIONAMENTO DO SEGUNDO NOME "IFE*/
+}
+
+.info-direita h1{
+    font-size: 300px;
+    color:#ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 30px;
+    text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0, 0, 0, .1),
+    0 0px 5px rgba(0, 0, 0, .1),
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
+    /*EDIT DA PRTE DO NOME "IFE"*/
+}
+
+@media screen and(max-width: 726px) {
+  
+}
